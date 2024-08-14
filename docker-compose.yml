@@ -1,0 +1,10 @@
+version: "3"
+services:
+  library_genesis:
+    container_name: library_genesis
+    restart: always
+    ports:
+      - "8003:8003"
+    volumes:
+      - /umbrel/app-data/library_genesis/downloads:/downloads
+    image: library_genesis
